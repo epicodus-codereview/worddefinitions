@@ -15,4 +15,7 @@ class Definition
   def save
     @@definitions.push(self)
   end
+  def self.clear
+    @@definitions = []
+  end
 end

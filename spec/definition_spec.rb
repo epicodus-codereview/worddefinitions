@@ -4,6 +4,7 @@ require "./lib/definition"
 describe Definition do
 
   before do
+
     @test_definition = Definition.new('a type of dog breed')
   end
 
@@ -23,6 +24,13 @@ describe Definition do
     it 'save a new definition to defini  array'  do
       @test_definition.save
       expect(Definition.all_definitions).to eq [@test_definition]
+    end
+  end
+
+  describe '.clear' do
+    it 'empties out all saved definition' do
+      Definition.clear
+      expect(Definition.all_definitions).to eq []
     end
   end
 end
