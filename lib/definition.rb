@@ -11,4 +11,8 @@ class Definition
   def self.all_definitions
     @@definitions
   end
+
+  def save
+    @@definitions.push(self)
+  end
 end

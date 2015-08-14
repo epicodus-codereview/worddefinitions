@@ -18,4 +18,11 @@ describe Definition do
       expect(Definition.all_definitions).to eq([])
     end
   end
+
+  describe  '#save' do
+    it 'save a new definition to defini  array'  do
+      @test_definition.save
+      expect(Definition.all_definitions).to eq [@test_definition]
+    end
+  end
 end
