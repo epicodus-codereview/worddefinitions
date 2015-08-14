@@ -56,10 +56,11 @@ describe Word do
       @test_word.save
       test_word1 = Word.new("lab")
       test_word1.save
-
       expect(Word.find("lab")).to eq test_word1
     end
   end
+
+  
 
 
 
