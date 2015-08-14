@@ -22,10 +22,18 @@ describe Word do
   end
 
   describe ('#definition') do
-    it('returns the definition') do
+    it('returns the definition of word') do
       test_word = Word.new('lab', 'a breed of dog')
       expect(test_word.definition).to(eq("a breed of dog"))
     end
   end
+
+  describe ('#words') do
+    it ('returns an empty array of words') do
+      expect(Word.all_words).to eq []
+    end
+  end
+
+
 
 end

@@ -1,7 +1,9 @@
 class Word
+  @@words = []
   def initialize(name, definition)
     @name = name
     @definition = definition
+
   end
 
   def name
@@ -10,6 +12,10 @@ class Word
 
   def definition
     @definition
+  end
+
+  def self.all_words
+    @@words
   end
 
 end
