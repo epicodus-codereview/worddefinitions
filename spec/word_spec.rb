@@ -1,21 +1,11 @@
 require('rspec')
 require('./lib/word')
 
-
 describe Word do
   before do
     Word.clear
     @test_word = Word.new('pasta')
   end
-
-
-
-  # describe ('initialize') do
-  #   it ('initialize instance for word class') do
-  #     #test_word = Word.new("apple", "a type of fruit")
-  #     expect(@test_word).to(eq("pasta"))
-  #   end
-  # end
 
   describe ('#name') do
     it("returns the name of word") do
@@ -23,13 +13,6 @@ describe Word do
       expect(@test_word.name).to(eq("pasta"))
     end
   end
-
-  # describe ('#definition') do
-  #   it('returns the definition of word') do
-  #     #test_word = Word.new('lab', 'a breed of dog')
-  #     expect(@test_word.definition).to(eq("a type of food"))
-  #   end
-  # end
 
   describe ('#words') do
     it ('returns an empty array of words') do
@@ -60,7 +43,7 @@ describe Word do
     end
   end
 
-  
+
 
 
 

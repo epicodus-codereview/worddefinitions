@@ -2,11 +2,19 @@ class Word
   @@words = []
   def initialize(name)
     @name = name
-
+    @all_definitions = []
   end
 
   def name
     @name
+  end
+
+  def all_definitions
+    @all_definitions
+  end
+
+  def save_definition(definition)
+    @all_definitions.push(definition)
   end
 
   def self.all_words

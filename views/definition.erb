@@ -1,4 +1,13 @@
-<h1><%= %></h1>
+<h1><%= @found_word.name %></h1>
 <ul>
-  <li></li>
+  <% @found_word.all_definitions.each do |definition| %>
+  <li><%=definition.definition%>
+  <% end %>
 </ul>
+
+<h1>Add a New Definition</h1>
+<form class="" action="<%= @found_word.name %>/create_new_definition" method="post">
+  <label for="">New Definition</label>
+  <input type="text" name="definition" value="">
+  <button type="submit" name="button" class="btn-success">Submit</button>
+</form>
