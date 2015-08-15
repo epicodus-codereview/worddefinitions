@@ -4,6 +4,10 @@
 
 ## a ruby app let user store word and definition for the word and refer and edit later
 
+## here is a link to the live page 
+
+https://fierce-beach-9103.herokuapp.com/
+
 ### Legal
 
 Copyright (c) 2015 **_{List of contribtors}_**
